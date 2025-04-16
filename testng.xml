@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Test Suite">
+
+
+    <listeners>
+        <listener class-name="screenshot.TestListener" />
+    </listeners>
+
+
+    <test name="Appointment Management Test">
+
+
+        <classes>
+            <class name="care_sa_admin_portal.appointment_management"/>
+        </classes>
+
+
+
+    </test>
+</suite>
+
+
+
