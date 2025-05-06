@@ -1,4 +1,4 @@
-package anfas;
+package anfas_main_class_for_beneficiary;
 
 import java.time.Duration;
 
@@ -14,10 +14,18 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.aventstack.extentreports.ExtentReports;
+
+import anfas.extendreport;
 import care_sa_admin_portal.home_page;
 
 public class base_class 
 {
+	
+	
+
+	
+	private static ExtentReports extent;
 	
 	
 	
@@ -42,22 +50,43 @@ public class base_class
 		public void launchbrowser() throws InterruptedException {
 			
 			
-	
-			
+		 System.setProperty("file.encoding", "UTF-8");
+		 
+	//	 extendreport.getExtentReports();
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 extent = extendreport.getExtentReports();
+		 
+		 
+		 
+		 extent.setSystemInfo("Tester", "ARUN THIVYAN");
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 			
 			
 			System.setProperty("webdriver.chrome.driver","/Users/apple/Desktop/tabseer_bug_videos/chromedriver-mac-x64/chromedriver");
 			
 			
-			
-			
-			
-			
-			
-			
-			
-
-			
+		
 			
 //			WebDriverManager.chromedriver().setup();
 			
@@ -110,7 +139,7 @@ public class base_class
 			
 			////////////////
 			
-			wait = new WebDriverWait(driver, Duration.ofSeconds(75));
+			wait = new WebDriverWait(driver, Duration.ofSeconds(95));
 			
 			
 			
@@ -129,74 +158,41 @@ public class base_class
 
 }
 	 
+	 
+
+	 
+	 
+	 
 	  @AfterClass
 		
 		
-			public void hghg() {
+			public void hghg() 
+	  {
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  extent.flush();
+		  
+		  
+		  
+		 // extendreport.getExtentReports().flush();
+		  
+		  
+	
 				
 		  
 		//driver.quit();
 				
 			}
 	  
-
-	  
-	
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-//	  
-//	  public static WebElement getVisibleElement(By locator) {
-//	        return new WebDriverWait(driver, Duration.ofSeconds(75)).until(ExpectedConditions.visibilityOfElementLocated(locator));
-//	    }
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-
-	 
 	  
 
 }
