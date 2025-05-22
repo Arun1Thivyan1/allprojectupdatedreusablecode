@@ -1,4 +1,4 @@
-package anfas_main_class_for_beneficiary;
+package anfas_main_classes_for_all_modules;
 
 import java.awt.AWTException;
 
@@ -79,7 +79,14 @@ public class Beneficiary extends base_class
 	dateclass_for_month dat= new dateclass_for_month();////date for month
 	
 	
-//	ExtentTest test = extendreport.createTest("Add Beneficiary Test");
+
+	
+	
+	
+	
+	
+	//JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	
 	
 	 private static final Logger logger = LogManager.getLogger(Beneficiary.class);	
@@ -91,8 +98,13 @@ public class Beneficiary extends base_class
 		public void login() throws InterruptedException, AWTException, IOException {
 			
 			
+			
+			
+			 startTest("Login Test");
+			
+			
 	
-			 test = extendreport.createTest("Login Test");
+		//	 test = extendreport.createTest("Login Test");
 
 			reusablekeyboardactions.enterText(By.xpath(subclassforxpath.email_path), "survey@gmail.com");
 			
@@ -110,6 +122,11 @@ public class Beneficiary extends base_class
             
 			
             reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.submit_button));
+            
+            
+            
+            
+           
 			
 			
 		}	
@@ -123,13 +140,16 @@ public class Beneficiary extends base_class
 
 		public void clicksidemenubarandbeneficiarybutton() throws InterruptedException, AWTException, IOException {
 			
-			Thread.sleep(15000);
+			Thread.sleep(25000);
 			
-			 test = extendreport.createTest("sidemenubutton");
+			
+			
+			startTest("sidemenubutton");
+			
+	
 			
 			///////////////////////////////////////////////////////////
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			
+		
 
 			
 			
@@ -156,10 +176,13 @@ public class Beneficiary extends base_class
 		public void clicknewbeneficiarybutton() throws InterruptedException, AWTException, IOException {
 		
 		     
+		
+		
+		
 		     Thread.sleep(5000);
 		     
-		
-		      test = extendreport.createTest("clicknewbeneficiary");
+		     startTest("click new beneficiary button");
+		 //     test = extendreport.createTest("clicknewbeneficiary");
 		     
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.clicknewbeneficiarybutton));
 		     
@@ -180,10 +203,13 @@ public class Beneficiary extends base_class
 			
 			
 
-			public void uploadimage() throws InterruptedException, AWTException, IOException {     
+			public void uploadimage() throws InterruptedException, AWTException, IOException {  
+		 		
+		 		
+		 		startTest("upload image");
 		     
 		     
-			   test = extendreport.createTest("uploadimage");
+			 //  test = extendreport.createTest("uploadimage");
 
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.uploadimage));
 		     
@@ -209,7 +235,10 @@ public class Beneficiary extends base_class
 			public void addname() throws InterruptedException, AWTException, IOException {  
 		 		
 		 		
-		 		 test = extendreport.createTest("addname");
+		 		
+		 		startTest("addname");
+		 		
+		 //		 test = extendreport.createTest("addname");
 		     
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryname), name);
 		     
@@ -225,7 +254,9 @@ public class Beneficiary extends base_class
 			
 			
 
-			public void addmobilenumber() throws InterruptedException, AWTException, IOException {  
+			public void addmobilenumber() throws InterruptedException, AWTException, IOException { 
+		 		
+		 		startTest("addmobilenumber");
 		     
 		  
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiarymobilenumber), mobile);
@@ -240,6 +271,9 @@ public class Beneficiary extends base_class
 			
 
 			public void addemail() throws InterruptedException, AWTException, IOException {
+		 		
+		 		
+		 		startTest("addemail");
 	
 		     
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryemail), "amns@gmail.com");
@@ -257,6 +291,9 @@ public class Beneficiary extends base_class
 			
 
 				public void adddate() throws InterruptedException, AWTException, IOException { 
+		 		
+		 		
+		 		startTest("adddate");
 		     
 		     WebElement ninee= wait_helper.getVisibleElement(By.xpath((subclassforxpath.beneficiarydate)));
 			 	
@@ -296,6 +333,9 @@ public class Beneficiary extends base_class
 			
 
 				public void addnationalid() throws InterruptedException, AWTException, IOException { 
+		 		
+		 		
+		 		startTest("addnationalid");
 		 
 		     
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiarynationalid), "8760987678");
@@ -308,6 +348,9 @@ public class Beneficiary extends base_class
 			
 
 				public void addservicetype() throws InterruptedException, AWTException, IOException { 
+		 		
+		 		
+		 		startTest("addservicetype");
 		 	
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiaryservicetype));
 		    
@@ -316,30 +359,74 @@ public class Beneficiary extends base_class
 		 	
 		 	
 		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
 		 	@Test(priority=11,retryAnalyzer = RetryAnalyzer.class)
-			
-			
-
+//			
+//			
+//
 		    public void addservicetypevalues() throws InterruptedException, AWTException, IOException { 
-		
-		    
+//		
+//		    
 		     Thread.sleep(4000);
-		     
-		     
-		     
-
-		     
+//		     
+//		     
+		     startTest("addservicetypevalues");
+//
+//		     
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiaryservicetypevalues));
-		     
-		     
-
-		 	}
+//		     
+//		     
+//
+	 	}
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
 			 	
 		 	@Test(priority=12,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryregion() throws InterruptedException, AWTException, IOException {
+		 		
+		 		
+		 		startTest("addbeneficiarryregion");
 		   
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiaryregion));
 		     
@@ -351,36 +438,68 @@ public class Beneficiary extends base_class
 			
 
 		    public void addbeneficiaryregionvalues() throws InterruptedException, AWTException, IOException {
+	    	   
+	    	   startTest("addbeneficiaryregionvalues");
+	    	   
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiaryregiontypevalues));
 		     
 	       } 
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+//	       
+//	       @Test(priority=14,retryAnalyzer = RetryAnalyzer.class)
+//			
+//			
+//
+//		    public void addbeneficiarynationalid() throws InterruptedException, AWTException, IOException {
+//	    	   
+//	    	 
+//	    	   startTest("addbeneficiarynationalid");
+//		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiarynationalid), "8760987678");
+//	     
+//	       }
 	       
 	       
 	       @Test(priority=14,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
-		    public void addbeneficiarynationalid() throws InterruptedException, AWTException, IOException {
-		   
-		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiarynationalid), "8760987678");
-	     
+		    public void addbeneficiaryaddress() throws InterruptedException, AWTException, IOException {
+	    	   
+	    	   startTest("addbeneficiaryaddress");
+	    	 
+		     
+		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryaddress), "address");
 	       }
-	       
 	       
 	       @Test(priority=15,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
-		    public void addbeneficiaryaddress() throws InterruptedException, AWTException, IOException {
-		     
-		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryaddress), "address");
-	       }
-	       
-	       @Test(priority=16,retryAnalyzer = RetryAnalyzer.class)
-			
-			
-
 		    public void addbeneficiarygender() throws InterruptedException, AWTException, IOException {
+	    	   
+	    	   
+	    	   startTest("addbeneficiarygender");
 		     
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiarygender));
 		     
@@ -388,34 +507,43 @@ public class Beneficiary extends base_class
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiarygendervalues));
 	       } 
 		 
-	       @Test(priority=17,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=16,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryheightvalue() throws InterruptedException, AWTException, IOException 
 	       { 
+	    	   
+	    	   startTest("addbeneficiaryheightvalue");
+	    	   
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryheightvalue), "75");
 		     
 	       }  
 	       
 	       
-	       @Test(priority=18,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=17,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryweightvalue() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiaryweightvalue");
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryweightvalue), "75");
 		     
 	       } 
 		     
 		    
-	       @Test(priority=19,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=18,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiarycaregivervalue() throws InterruptedException, AWTException, IOException 
-	       {     
+	       {  
+	    	   
+	    	   startTest("addbeneficiarycaregivervalue");
+	    	   
+	    	   
 		     reusablekeyboardactions.selectDropdownValue(
 		    		    By.xpath(subclassforxpath.beneficiarycaregiverdropdown),
 		    		    By.xpath(subclassforxpath.caregiverValue)
@@ -425,13 +553,24 @@ public class Beneficiary extends base_class
 	       }
 		     
 		     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	       
+	       
+	       
+	       
+	       
+	       
+	       
+	       
 		     
-	       @Test(priority=20,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=19,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryfromdate() throws InterruptedException, AWTException, IOException 
 	       { 
+	    	   
+	    	   startTest("addbeneficiaryfromdate");
+	    	   
 		     WebElement tenn= wait_helper.getVisibleElement(By.xpath((subclassforxpath.beneficiaryfromdate)));
 			 	
 		     tenn.click();
@@ -444,12 +583,19 @@ public class Beneficiary extends base_class
 		    
 	       
 	       
-	       @Test(priority=21,retryAnalyzer = RetryAnalyzer.class)
+	       
+	       
+	       
+	       
+	       
+	       @Test(priority=20,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiarytodate() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiarytodate");
 		     WebElement elevenn= wait_helper.getVisibleElement(By.xpath((subclassforxpath.beneficiarytodate)));
 			 	
 		     elevenn.click();
@@ -465,12 +611,13 @@ public class Beneficiary extends base_class
 		     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		     
 		     
-	       @Test(priority=22,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=21,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryfromtime() throws InterruptedException, AWTException, IOException 
 	       {  
+	    	   startTest("addbeneficiaryfromtime");
 		     
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiaryfromtime));
 	         
@@ -479,12 +626,15 @@ public class Beneficiary extends base_class
 		     
 	       }  
 	       
-	       @Test(priority=23,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=22,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiarytotime() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiarytotime");
+	    	   
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiarytotime));
 		     
 		     
@@ -493,12 +643,15 @@ public class Beneficiary extends base_class
 		     
 	       } 
 		     
-	       @Test(priority=24,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=23,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryemergencyname() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiaryemergencyname");
+	    	   
 		     
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryemergencyname), "test");
 		     
@@ -506,24 +659,28 @@ public class Beneficiary extends base_class
 	       } 
 	       
 	       
-	       @Test(priority=25,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=24,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryemergencynumber() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiaryemergencynumber");
 		     
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryemergencynumber), mobile);
 		     
 	       }
 	       
 	       
-	       @Test(priority=26,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=25,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryattachmenttitle() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiaryattachmenttitle");
 		     
 		     reusablekeyboardactions.enterText(By.xpath(subclassforxpath.beneficiaryattachmenttitle), "test");
 		     
@@ -536,12 +693,14 @@ public class Beneficiary extends base_class
 /////uploadfile/////
 	       
 	       
-	       @Test(priority=27,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=26,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
 		    public void addbeneficiaryattachmentchoosefile() throws InterruptedException, AWTException, IOException 
 	       {
+	    	   
+	    	   startTest("addbeneficiaryattachmentchoosefile");  
 		     
 		     
 		     reusablekeyboardactions.uploadFile(By.xpath(subclassforxpath.beneficiaryattachmentchoosefile), "/Users/apple/Downloads/5.jpeg");
@@ -553,27 +712,33 @@ public class Beneficiary extends base_class
 		     
 	       
 	       
-	       @Test(priority=28,retryAnalyzer = RetryAnalyzer.class)
+	       @Test(priority=27,retryAnalyzer = RetryAnalyzer.class)
 			
 			
 
-		    public void addbeneficiarysubmit() throws InterruptedException, AWTException, IOException 
+		    public void addbeneficiarysubmit() throws Exception 
+		    
+		    
 	       {
 	    	   
+	    	   startTest("addbeneficiarysubmit"); 
 	    	   
-	    	   test = extendreport.createTest("add beneficiary submit");
+	    	   
+	    	
 	    	   
 	    	   
-		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiarysubmit)); 
-		     
-		
-		     
-		     Thread.sleep(5000);
+	    	   
+	    	   reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.beneficiarysubmit)); 
+	    	   
+	    	   
+
+	    	   
+	    	   Thread.sleep(5000);
 		     
 		     reusablekeyboardactions.clickElement(By.xpath(subclassforxpath.newbeneficiaryok)); 
 		
 
-		     
+		             
 		     
 		}
 	       
@@ -581,35 +746,9 @@ public class Beneficiary extends base_class
 
 	       
 	       
-	       
-//	       @AfterMethod
-//	       public void getResult(ITestResult result) 
-//	       {
-//	           if (result.getStatus() == ITestResult.FAILURE) 
-//	           {
-//	               ExtentTest t = (ExtentTest) result.getAttribute("retryTest");
-//	               if (t != null) 
-//	               {
-//	                   t.fail(result.getThrowable());
-//	               } 
-//	               else 
-//	               {
-//	                   extendreport.getTest().fail(result.getThrowable());
-//	               }
-//	           }
-//	           
-//	           else if (result.getStatus() == ITestResult.SUCCESS) 
-//	           {
-//	               ExtentTest t = (ExtentTest) result.getAttribute("retryTest");
-//	               if (t != null) 
-//	               {
-//	                   t.pass("Test passed on retry");
-//	               } else {
-//	                   extendreport.getTest().pass("Test passed");
-//	               }
-//	           }
-//	       }       
+	       }       
+     
 	       
 
 
-}
+
