@@ -31,7 +31,35 @@ public class subclassforxpath
 	
 	
 	
+	
+	
+	public static final String clickreoprtbutton ="//*[text()=' Report']"; 
+	
+	
+	
+	
+	public static final String clickpmbutton ="//*[text()=' Project Manager']";
+	
+	
+	
+	public static final String clickchbutton ="//*[text()=' Committee Head']";
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static final String clicknewbeneficiarybutton ="//*[text()=' Create Beneficiary ']"; 
+	
+	
+	
+	public static final String clicknewpmbutton ="//*[text()=' Add ']"; 
+	
 	
 	
 	
@@ -42,10 +70,25 @@ public class subclassforxpath
 	public static final String beneficiaryname ="//*[text()='Name']//following-sibling::input";
 	
 	
+	
+	public static final String pmfirstname ="//*[text()='First Name']//following-sibling::input";
+	
+	
+	
+	
+	public static final String pmlastname ="//*[text()='Last Namee']//following-sibling::input";
+	
+	
+	
+
+	
+
+	
+	
 	public static final String beneficiarymobilenumber ="//*[text()='Mobile Number']//following-sibling::input"; 
 
 
-	public static final String beneficiaryemail ="//*[text()='Email']//following-sibling::input"; 
+	public static final String beneficiaryemail ="//*[text()='Emaill']//following-sibling::input"; 
 
 	
 	public static final String beneficiarydate ="//*[text()='DOB']//following-sibling::input"; 
@@ -59,13 +102,18 @@ public class subclassforxpath
 	
 		
 	
-	public static final String beneficiaryservicetypevalues ="//*[text()='Test service 2']";
+	public static final String beneficiaryservicetypevalues ="//*[text()='Test service 4']";
 	
 	
 	public static final String beneficiaryregion ="(//*[text()='Region']//following-sibling::ng-select)[2]"; 
 	
+	
+	
+	
+	
+	//*[@role='option']//child::*[text()='Qaseem']
 
-	public static final String beneficiaryregiontypevalues ="//*[text()='Qaseem']";
+	public static final String beneficiaryregiontypevalues ="//*[@role='option']//child::*[text()='Qaseem']";
 	
 	
 	public static final String beneficiaryaddress ="//*[text()='Address']//following-sibling::input";
@@ -86,17 +134,26 @@ public class subclassforxpath
 	
 	
 	
-	public static final String beneficiaryassigncaregiver ="(//*[text()='Caregiver'])[2]//following-sibling::ng-select";
-
-	
-	
-	public static final String beneficiarychoosecaregiver ="(//*[text()='test  care 66'])[1]";
-
+	//public static final String beneficiaryassigncaregiver ="(//*[text()='Caregiver'])[2]//following-sibling::ng-select";
 
 	
 	
 	
 	
+	
+	public static final String beneficiarycaregiverdropdown = "(//*[text()='Caregiver'])[2]//following-sibling::ng-select"; // or input/span, depending on your UI
+	public static final String caregiverValue = "//div[@class='ng-dropdown-panel-items scroll-host']//span[(text())='test care 6']";
+	
+	
+	
+
+
+	
+	
+	//public static final String beneficiarychoosecaregiver ="//*[@id='a2c4f7d178fd-6']//*[text()='Test Caregiver 6']";
+	
+	
+
 	
 	
 	
@@ -136,20 +193,23 @@ public class subclassforxpath
 	
 	
 	
-	////Alter for the below both code////// (//*[text()='Attachments']//parent::h4//following-sibling::div//descendant::input)[1] ///////////
 	
 	
 	
-	public static final String beneficiaryemergencynumber ="(//*[@placeholder='Enter the Mobile Number'])[2]";
+	public static final String beneficiaryemergencynumber ="(//*[@placeholder='Enter the Mobile Numbe'])[2]";
 	
 	
 	public static final String beneficiaryattachmenttitle ="//*[@placeholder='Enter the title']";
+	
+	
+	
+
 
 	
 	public static final String beneficiaryattachmentchoosefile ="(//*[text()='Attachments']//parent::h4//following-sibling::div//descendant::input)[2]";
 	
 	
-	public static final String beneficiarysubmit ="//*[text()='Submit']";
+	public static final String beneficiarysubmit ="//*[text()=' Submit ']";
 	
 	
 

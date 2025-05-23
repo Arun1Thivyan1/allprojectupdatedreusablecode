@@ -20,7 +20,10 @@ import com.aventstack.extentreports.ExtentTest;
 
 import anfas.delete_old_screenshotimage_and_extend_report;
 import anfas.extendreport;
+import anfas.reusablekeyboardactions;
 import anfas.send_email_to_the_team_for_extend_report;
+import anfas.subclassforxpath;
+import anfas.wait_helper;
 import care_sa_admin_portal.home_page;
 import uianduxtesting.clean_the_images_in_the_folder;
 
@@ -28,21 +31,51 @@ public class base_class
 {
 	
 	
-
+///////////////////
+	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	
+	
+	
+///////////////////	
 	
 	private static ExtentReports extent;
 	
 	
 
 	//
-	protected JavascriptExecutor js;
-//
+	
+	//protected JavascriptExecutor js;
+	
+	//
+	
+	public JavascriptExecutor getJs() {
+	    return (JavascriptExecutor) driver.get();
+	}
 	
 	
-	public  WebDriver driver;
 	
 	
-	public static WebDriverWait wait;
+	
+	
+	
+	
+	
+
+	
+///////	
+//	public  WebDriver driver;
+//////	
+	
+	
+	
+	//
+//	public static WebDriverWait wait;
+	//
+	
+	
+	
+	public static ThreadLocal<WebDriverWait> wait = new ThreadLocal<WebDriverWait>();
+
 	
 
 	
@@ -57,22 +90,40 @@ public class base_class
     
     
     
-    ////////////////////
+  
+    //
+  //  protected ExtentTest test; 
+    //
     
-    protected ExtentTest test; 
     
     
+    
+    
+    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
     
     
     
     
     protected void startTest(String testName) {
-        test = extendreport.createTest(testName);
+        extentTest.set(extent.createTest(testName));
+    }
+    
+    protected ExtentTest getTest() {
+        return extentTest.get();
     }
     
     
     
-    ///////////////////
+    
+
+    
+    //
+//    protected void startTest(String testName) {
+//        test = extendreport.createTest(testName);
+//    }
+    
+    //
+
     
     
     
@@ -173,49 +224,142 @@ public class base_class
 			
 			
 			
+		///	
+			
+		//	driver= new ChromeDriver(options);
+			
+		///
+			
+		//
+			
+			driver.set(new ChromeDriver(options));
 			
 			
-			driver= new ChromeDriver(options);
 			
+		//	
 		      logger.info("Browser launched successfully");
+		      
+		 
+		      
+		      
+		      
+		      
+		      
+		///
+		      
+		//	driver.manage().window().maximize();
 			
-			driver.manage().window().maximize();
-			
-			
-			
-			//
-	        // Initialize JavascriptExecutor after driver creation
-	        js = (JavascriptExecutor) driver;
-	        logger.info("JavascriptExecutor initialized successfully");
-			//
-			
-			
-			
-			////////////////
-			
-			wait = new WebDriverWait(driver, Duration.ofSeconds(75));
+		///
 			
 			
+		      
+		//      
+		      
+			driver.get().manage().window().maximize();
 			
-			
-			
-			
-			//////////////////
 		
+		//
+	        // Initialize JavascriptExecutor after driver creation
+			
+			
+			
+			
+			//
+	   //     js = (JavascriptExecutor) driver;
+	        //
+	        
+	        
+	        //
+	        
+	        
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		//	
+			
+		//	js = (JavascriptExecutor) driver.get();
+			
+			
+		//	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	        
+	        //
+	        logger.info("JavascriptExecutor initialized successfully");
+		//
+			
+			
+			
+			//
+			
+		//	wait = new WebDriverWait(driver, Duration.ofSeconds(75));
+			
 
-		driver.get("https://demo.annztech.com/#/account/login");
+			
+	//		wait = new WebDriverWait(driver.get(), Duration.ofSeconds(75));
 			
 			
-//		driver.get("https://www.facebook.com/");
+			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(75)));
 			
 			
+		 //
 			
+			
+
+
+			
+		//
+
+		driver.get().get("https://demo.annztech.com/#/account/login");
+			
+		//	
 			
 			
 			
 			logger.info("Navigated to example.com");
+			
+			
+			
+			
+			
+			
+			
+			
 		
 			
+			
+			
+			
+			 
+				
+				
+				
+
+
+					 
+					 
+				
+					 
+		
 			
 
 }
@@ -254,11 +398,27 @@ public class base_class
 		        logger.error("Failed to send the email report: " + e.getMessage());
 		    } finally {
 		        // Close the browser
-		        if (driver != null) 
-		        {
-		         //   driver.quit();
-		            logger.info("Browser closed.");
-		        }
+		    	
+		    	
+		    	
+		    	
+		    	
+		    	if (driver.get() != null) {
+		    	    driver.get().quit();
+		    	    logger.info("Browser closed.");
+		    	}
+		    	
+		    	
+		    	
+
+		    	
+		    	
+		    	
+//		        if (driver != null) 
+//		        {
+//		         //   driver.quit();
+//		            logger.info("Browser closed.");
+//		        }
 	
 		    }
 	  }

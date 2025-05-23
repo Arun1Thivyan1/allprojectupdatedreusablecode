@@ -26,7 +26,7 @@ public class dateclass_for_month
 	    Date currentDate = new Date(); // Today's date
 	    Calendar calendar = Calendar.getInstance();
 	    calendar.setTime(currentDate); // Set calendar to today's date
-	    calendar.add(Calendar.MONTH, 2); // Add 1 month
+	    calendar.add(Calendar.MONTH, 2); // Add 2 month
 
 	    Date targetDate = calendar.getTime();
 	    SimpleDateFormat simpleDateFormat = new SimpleDateFormat(dateFormat);

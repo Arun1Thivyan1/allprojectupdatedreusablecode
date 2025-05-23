@@ -9,16 +9,23 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 
 public class screenshotutil 
 
@@ -27,36 +34,83 @@ public class screenshotutil
 	
 	
 	
-	public static void captureScreenshot(WebDriver driver, String testName) {
-		
-		
-		
-        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-        File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        
-       
-        
-        String screenshotPath = "/Users/apple/eclipse-workspace/all_pro_maj_flow_automation/screenshot_images" +  "/" + testName + "_" + timestamp + ".png";
-        
-        
-     
 
-        
-        
-        
-       try {
-            FileUtils.copyFile(srcFile, new File(screenshotPath));
-            System.out.println("Screenshot saved at: " + screenshotPath);
-        } catch (IOException e) 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    
+ // Method to capture screenshot and return as Base64
+    public static String captureScreenshot(WebDriver driver, String testName) {
+        try 
         {
         	
-          e.printStackTrace();
+        	
+        	driver.manage().window().maximize();
+            // Scroll to the bottom to ensure visibility of elements
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+            
+            Thread.sleep(5000);
+            // Optional: Hide fixed headers/footers to avoid border issues
+            
+            js.executeScript("document.querySelectorAll('header, footer, .fixed-element').forEach(e => e.style.display = 'none');");
+
+            
+            // Capture screenshot as Base64
+            return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
         }
     }
-	
-	
-	
+    
+    
+  
+    
+    
 }
+    
+    
+    
+    
+    
+    
+
+	
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+	
+	
+
+	
+	
+
 	
 	
 	
@@ -67,50 +121,5 @@ public class screenshotutil
 	
 	
 	
-	
-//	  public static void captureScreenshotWithHighlight(WebDriver driver, WebElement element, String testName) 
-//	  {
-//		  
-//	        try {
-//	            // Capture the screenshot
-//	            File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//	            
-//	            BufferedImage img = ImageIO.read(srcFile);
-//	            
-//	            
-//	            
-//	            
-//	            
-//	            
-//
-//	            // Get element's location and size
-//	            
-//	            
-//	            Point point = element.getLocation();
-//	            Dimension size = element.getSize();
-//
-//	            // Highlight the element
-//	            Graphics2D g2d = img.createGraphics();
-//	            g2d.setColor(Color.RED);
-//	            g2d.setStroke(new BasicStroke(3));
-//	            g2d.drawRect(point.getX(), point.getY(), size.getWidth(), size.getHeight());
-//	            g2d.dispose();
-//
-//	            // Save the screenshot with annotation
-//	            String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-//	            String screenshotPath =  "/Users/apple/eclipse-workspace/all_pro_maj_flow_automation/screenshot_images" +  "/" + testName + "_" + timestamp + ".png";
-//	            ImageIO.write(img, "png", new File(screenshotPath));
-//
-//	            System.out.println("Screenshot with highlight saved at: " + screenshotPath);
-//	        } catch (IOException e) {
-//	            e.printStackTrace();
-//	        }
-//	    }
-//	
-//	
-//	
-//	
-//
-//}
 
 

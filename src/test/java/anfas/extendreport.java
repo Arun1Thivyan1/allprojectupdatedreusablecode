@@ -11,7 +11,10 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class extendreport 
 {
 	 private static ExtentReports extent;
-	    private static ExtentTest test;
+	 private static ExtentTest test;
+	 private static String reportPath;
+	    
+	    
 
 	    public static ExtentReports getExtentReports() {
 	        if (extent == null) {
@@ -19,12 +22,15 @@ public class extendreport
 	        	
 	        	  String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
 	              String reportName = "automation_test_report_" + timestamp + ".html";
-	              String reportPath = "test-output/" + reportName;
+	               reportPath = "test-output/" + reportName;
 	        	
 	        	
 	           
 	            
 	            ExtentSparkReporter htmlReporter = new ExtentSparkReporter(reportPath);
+	            
+	            
+	            htmlReporter.config().setTimeStampFormat("dd-MM-yyyy HH:mm:ss");
 	            
 	            htmlReporter.config().setReportName("Automation Test Report");
 	            
@@ -43,6 +49,40 @@ public class extendreport
 	        }
 	        return extent;
 	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    // Method to get the path of the generated report
+	    public static String getReportPath() {
+	        return reportPath;
+	    }
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
 	    
 	    
 

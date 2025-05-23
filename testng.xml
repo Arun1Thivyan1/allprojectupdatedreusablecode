@@ -1,23 +1,29 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="Test Suite">
+<suite name="Test Suite"  parallel="classes" thread-count="2" >
 
 
     <listeners>
-        <listener class-name="screenshot.TestListener" />
+        
+
+<listener class-name="unified_test_listener.listenerforboth_extendreport_failurescreenshot" />
+
+
     </listeners>
 
 
-    <test name="Appointment Management Test">
 
 
+
+
+    <test name="Beneficiary and Project Manager Test">
         <classes>
-            <class name="care_sa_admin_portal.appointment_management"/>
+            <class name="anfas_main_classes_for_all_modules.Beneficiary" />
+
+            <class name="anfas_main_classes_for_all_modules.project_manager" />
         </classes>
-
-
-
     </test>
+
 </suite>
 
 
