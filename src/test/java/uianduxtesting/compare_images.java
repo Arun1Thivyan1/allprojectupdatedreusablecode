@@ -18,7 +18,7 @@ public class compare_images
 	
 	
 
-
+system.out.println("h");
 	
 	
 	
