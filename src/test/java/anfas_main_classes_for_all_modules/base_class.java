@@ -42,37 +42,13 @@ public class base_class
 	
 	
 
-	//
-	
-	//protected JavascriptExecutor js;
-	
-	//
+
 	
 	public JavascriptExecutor getJs() {
 	    return (JavascriptExecutor) driver.get();
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
 
-	
-///////	
-//	public  WebDriver driver;
-//////	
-	
-	
-	
-	//
-//	public static WebDriverWait wait;
-	//
-	
-	
 	
 	public static ThreadLocal<WebDriverWait> wait = new ThreadLocal<WebDriverWait>();
 
@@ -86,17 +62,7 @@ public class base_class
 
 
     
-    
-    
-    
-    
-  
-    //
-  //  protected ExtentTest test; 
-    //
-    
-    
-    
+
     
     
     private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
@@ -108,21 +74,15 @@ public class base_class
         extentTest.set(extent.createTest(testName));
     }
     
-    protected ExtentTest getTest() {
+
+    
+    public static ExtentTest getExtentTest() {
         return extentTest.get();
     }
     
-    
-    
-    
 
     
-    //
-//    protected void startTest(String testName) {
-//        test = extendreport.createTest(testName);
-//    }
-    
-    //
+
 
     
     
@@ -193,8 +153,7 @@ public class base_class
 		 
 	
 			
-	//		System.setProperty("webdriver.chrome.driver","/Users/apple/Desktop/tabseer_bug_videos/chromedriver-mac-x64/chromedriver");
-			
+	
 
 			
 			System.setProperty("webdriver.chrome.driver","/Users/apple/Downloads/chromedriver-mac-x64/chromedriver");
@@ -208,68 +167,24 @@ public class base_class
 			
 			options.addArguments("--incognito");
 			
-//			options.addArguments("--no-sandbox"); // Disable Chrome security sandbox
-//			options.addArguments("--disable-setuid-sandbox");
-//			options.addArguments("--disable-blink-features=AutomationControlled");
-//			options.addArguments("--disable-web-security");
-//			options.addArguments("--allow-file-access-from-files");
-//			options.addArguments("--disable-notifications");
-//			options.addArguments("--disable-popup-blocking");
-//			options.addArguments("--disable-infobars");
-//			options.addArguments("--remote-allow-origins=*");
-			
-			
-			
-			
-			
-			
-			
-		///	
-			
-		//	driver= new ChromeDriver(options);
-			
-		///
-			
-		//
+
+	
 			
 			driver.set(new ChromeDriver(options));
 			
 			
 			
-		//	
+	
 		      logger.info("Browser launched successfully");
 		      
 		 
 		      
-		      
-		      
-		      
-		      
-		///
-		      
-		//	driver.manage().window().maximize();
-			
-		///
-			
-			
-		      
-		//      
+     
 		      
 			driver.get().manage().window().maximize();
 			
 		
-		//
-	        // Initialize JavascriptExecutor after driver creation
-			
-			
-			
-			
-			//
-	   //     js = (JavascriptExecutor) driver;
-	        //
-	        
-	        
-	        //
+
 	        
 	        
 			
@@ -279,18 +194,7 @@ public class base_class
 			
 			
 			
-			
-			
-			
-			
-			
-		//	
-			
-		//	js = (JavascriptExecutor) driver.get();
-			
-			
-		//	
-			
+
 			
 			
 			
@@ -308,30 +212,17 @@ public class base_class
 		//
 			
 			
-			
-			//
-			
-		//	wait = new WebDriverWait(driver, Duration.ofSeconds(75));
-			
 
-			
-	//		wait = new WebDriverWait(driver.get(), Duration.ofSeconds(75));
 			
 			
 			wait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(75)));
 			
 			
-		 //
-			
-			
-
-
-			
-		//
+	
 
 		driver.get().get("https://demo.annztech.com/#/account/login");
 			
-		//	
+	
 			
 			
 			
@@ -400,25 +291,7 @@ public class base_class
 		        // Close the browser
 		    	
 		    	
-		    	
-		    	
-		    	
-		    	if (driver.get() != null) {
-		    	    driver.get().quit();
-		    	    logger.info("Browser closed.");
-		    	}
-		    	
-		    	
-		    	
 
-		    	
-		    	
-		    	
-//		        if (driver != null) 
-//		        {
-//		         //   driver.quit();
-//		            logger.info("Browser closed.");
-//		        }
 	
 		    }
 	  }
