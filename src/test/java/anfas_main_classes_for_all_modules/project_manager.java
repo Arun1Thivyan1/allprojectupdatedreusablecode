@@ -45,7 +45,7 @@ public class project_manager extends base_class
 	dateclass_for_month dat= new dateclass_for_month();////date for month
 	
 	
-	private static final Logger logger = LogManager.getLogger(Beneficiary.class);
+	private static final Logger logger = LogManager.getLogger(project_manager.class);
 	
 	
 	
@@ -113,27 +113,17 @@ public class project_manager extends base_class
 
 	public void clicksidemenubarandbeneficiarybutton() throws InterruptedException, AWTException, IOException {
 		
-		Thread.sleep(15000);
+		Thread.sleep(20000);
 		
 		
 		
 		startTest("sidemenubutton");
-//		
-//
-//		
-//		///////////////////////////////////////////////////////////
-//	
-//
-//		
-//		
+
+		
+		
 		WebElement three = wait_helper.getVisibleElement(By.xpath((subclassforxpath.sidemenu_button)));
 		
-	//	
-		
-	//	js.executeScript("arguments[0].click();", three);
-		
-		
-	//
+
 		
 		getJs().executeScript("arguments[0].click();", three );
 		
@@ -231,13 +221,13 @@ public class project_manager extends base_class
 	
 	
 
-	public void uploadimage() throws InterruptedException, AWTException, IOException {  
+	public void project_manageruploadimage() throws InterruptedException, AWTException, IOException {  
  		
  		
- 		startTest("upload image");
+ 		startTest("project manager upload image");
      
      
-	 //  test = extendreport.createTest("uploadimage");
+	
 
      reusablekeyboardactions.clickElement(driver.get(),By.xpath(subclassforxpath.uploadimage));
      
@@ -245,7 +235,7 @@ public class project_manager extends base_class
      
      String filePath = "/Users/apple/Downloads/5.jpeg";
 
-  // Use the external utility class to upload the file
+ 
      
      
      Thread.sleep(5000);
@@ -268,7 +258,7 @@ public class project_manager extends base_class
  		
  		startTest("addname");
  		
- //		 test = extendreport.createTest("addname");
+
      
      reusablekeyboardactions.enterText(driver.get(),By.xpath(subclassforxpath.pmfirstname), name);
      
@@ -278,6 +268,34 @@ public class project_manager extends base_class
      System.out.println(name);
      
  	}
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
  	
  	
  	

@@ -54,13 +54,7 @@ public class listenerforboth_extendreport_failurescreenshot  implements ITestLis
 	        
 	        Object testClass = result.getInstance();
 	        
-	        //
-	        
-	        
-	    //    WebDriver driver = ((base_class) testClass).driver;
-	        
-	  
-	        //
+	
 	        
 	        
 	        WebDriver driver = ((base_class) testClass).driver.get();
@@ -101,6 +95,10 @@ public class listenerforboth_extendreport_failurescreenshot  implements ITestLis
 	        
 	        // Capture screenshot and save to the specified path
 	        String screenshotPath = screenshotutil.captureScreenshot(driver, testName);
+	        
+	        
+	        
+	    
 
 	        if (screenshotPath != null) {
 	            System.out.println("Screenshot saved at: " + screenshotPath);
@@ -125,7 +123,14 @@ public class listenerforboth_extendreport_failurescreenshot  implements ITestLis
 	        
 	        
 	        // Log in ExtentReport
-	        ExtentTest test = extendreport.getTest();
+	 
+	        
+	        
+	        ExtentTest test = base_class.getExtentTest();
+	        
+	        
+	        
+	        
 	        if (test != null) 
 	        
 	        {

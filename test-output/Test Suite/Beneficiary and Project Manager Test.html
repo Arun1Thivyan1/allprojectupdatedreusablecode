@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Beneficiary and Project Manager Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/2/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>12/1/4</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 23 18:20:10 IST 2025</td>
+<td>Started on:</td><td>Mon May 26 15:27:31 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>223 seconds (223319 ms)</td>
+<tr><td>Total time:</td><td>180 seconds (180842 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,33 +76,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.addlastname()'><b>addlastname</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
+<td title='anfas_main_classes_for_all_modules.Beneficiary.beneficiary_uploadimage()'><b>beneficiary_uploadimage</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
+Command: [d6956abbf125fb85fa3801fb5d58e8cb, sendKeysToElement {id=f.FB2E9E6D9426E8434AE11EE7EF5D9D0B.d.EF692E9FB4563E0B3C470D82C485F631.e.266, value=[Ljava.lang.CharSequence;@52d0f98f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51284/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d6956abbf125fb85fa3801fb5d58e8cb)] -&gt; xpath: //*[text()=&apos;Upload Image&apos;]//preceding-sibling::h5//child::img]
+Session ID: d6956abbf125fb85fa3801fb5d58e8cb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at anfas.reusablekeyboardactions.uploadFile(reusablekeyboardactions.java:97)
+	at anfas_main_classes_for_all_modules.Beneficiary.beneficiary_uploadimage(Beneficiary.java:283)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace108950972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace108950972'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373829736", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373829736'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
+Command: [d6956abbf125fb85fa3801fb5d58e8cb, sendKeysToElement {id=f.FB2E9E6D9426E8434AE11EE7EF5D9D0B.d.EF692E9FB4563E0B3C470D82C485F631.e.266, value=[Ljava.lang.CharSequence;@52d0f98f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51284/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d6956abbf125fb85fa3801fb5d58e8cb)] -&gt; xpath: //*[text()=&apos;Upload Image&apos;]//preceding-sibling::h5//child::img]
+Session ID: d6956abbf125fb85fa3801fb5d58e8cb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at anfas.reusablekeyboardactions.uploadFile(reusablekeyboardactions.java:97)
+	at anfas_main_classes_for_all_modules.Beneficiary.beneficiary_uploadimage(Beneficiary.java:283)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,54 +142,8 @@ Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>75</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.Beneficiary.addemail()'><b>addemail</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19500198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace19500198'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>75</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
+<td>0</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -177,70 +154,65 @@ Session ID: fbda72f3b54f2f7cc37893ccfce7017b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.clickprojectmanagerbutton()'><b>clickprojectmanagerbutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td></td>
-<td>0</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.Beneficiary.clickbeneficiarybutton()'><b>clickbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
-<td></td>
-<td>0</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.login()'><b>login</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td></td>
-<td>5</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.uploadimage()'><b>uploadimage</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td></td>
-<td>14</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.clicksidemenubarandbeneficiarybutton()'><b>clicksidemenubarandbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td></td>
-<td>15</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.Beneficiary.addname()'><b>addname</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
-<td></td>
-<td>0</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.Beneficiary.addmobilenumber()'><b>addmobilenumber</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
-<td></td>
-<td>0</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
-<tr>
 <td title='anfas_main_classes_for_all_modules.project_manager.addfirstname()'><b>addfirstname</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
 <td></td>
 <td>0</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.Beneficiary.login()'><b>login</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
-<td></td>
-<td>5</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.clicknewbeneficiarybutton()'><b>clicknewbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td></td>
-<td>5</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
-<td title='anfas_main_classes_for_all_modules.Beneficiary.uploadimage()'><b>uploadimage</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
-<td></td>
-<td>16</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
 <tr>
 <td title='anfas_main_classes_for_all_modules.Beneficiary.clicknewbeneficiarybutton()'><b>clicknewbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
 <td></td>
 <td>5</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.clicknewbeneficiarybutton()'><b>clicknewbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td></td>
+<td>5</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
 <tr>
 <td title='anfas_main_classes_for_all_modules.Beneficiary.clicksidemenubarandbeneficiarybutton()'><b>clicksidemenubarandbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
 <td></td>
-<td>15</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
+<td>20</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.Beneficiary.clickbeneficiarybutton()'><b>clickbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
+<td></td>
+<td>0</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.Beneficiary.addname()'><b>addname</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
+<td></td>
+<td>0</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.login()'><b>login</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td></td>
+<td>5</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.Beneficiary.login()'><b>login</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
+<td></td>
+<td>10</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.Beneficiary.addmobilenumber()'><b>addmobilenumber</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
+<td></td>
+<td>0</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.clicksidemenubarandbeneficiarybutton()'><b>clicksidemenubarandbeneficiarybutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td></td>
+<td>24</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.clickprojectmanagerbutton()'><b>clickprojectmanagerbutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td></td>
+<td>0</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.project_manageruploadimage()'><b>project_manageruploadimage</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td></td>
+<td>14</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -251,79 +223,33 @@ Session ID: fbda72f3b54f2f7cc37893ccfce7017b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='anfas_main_classes_for_all_modules.project_manager.addlastname()'><b>addlastname</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729683963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1729683963'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div></td>
-<td>75</td>
-<td>anfas_main_classes_for_all_modules.project_manager@6ef037e4</td></tr>
-<tr>
 <td title='anfas_main_classes_for_all_modules.Beneficiary.addemail()'><b>addemail</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
 <td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51284/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6956abbf125fb85fa3801fb5d58e8cb
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
 	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
+	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:357)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1828001535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1828001535'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace284564598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace284564598'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51284/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6956abbf125fb85fa3801fb5d58e8cb
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
 	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
 	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
+	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:357)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -341,7 +267,191 @@ Session ID: fbda72f3b54f2f7cc37893ccfce7017b
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>75</td>
-<td>anfas_main_classes_for_all_modules.Beneficiary@1921994e</td></tr>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.Beneficiary.beneficiary_uploadimage()'><b>beneficiary_uploadimage</b><br>Test class: anfas_main_classes_for_all_modules.Beneficiary</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6956abbf125fb85fa3801fb5d58e8cb, sendKeysToElement {id=f.FB2E9E6D9426E8434AE11EE7EF5D9D0B.d.EF692E9FB4563E0B3C470D82C485F631.e.266, value=[Ljava.lang.CharSequence;@6c80d53f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51284/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d6956abbf125fb85fa3801fb5d58e8cb)] -&gt; xpath: //*[text()=&apos;Upload Image&apos;]//preceding-sibling::h5//child::img]
+Session ID: d6956abbf125fb85fa3801fb5d58e8cb
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at anfas.reusablekeyboardactions.uploadFile(reusablekeyboardactions.java:97)
+	at anfas_main_classes_for_all_modules.Beneficiary.beneficiary_uploadimage(Beneficiary.java:283)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544275055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1544275055'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d6956abbf125fb85fa3801fb5d58e8cb, sendKeysToElement {id=f.FB2E9E6D9426E8434AE11EE7EF5D9D0B.d.EF692E9FB4563E0B3C470D82C485F631.e.266, value=[Ljava.lang.CharSequence;@6c80d53f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51284}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51284/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d6956abbf125fb85fa3801fb5d58e8cb)] -&gt; xpath: //*[text()=&apos;Upload Image&apos;]//preceding-sibling::h5//child::img]
+Session ID: d6956abbf125fb85fa3801fb5d58e8cb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at anfas.reusablekeyboardactions.uploadFile(reusablekeyboardactions.java:97)
+	at anfas_main_classes_for_all_modules.Beneficiary.beneficiary_uploadimage(Beneficiary.java:283)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>anfas_main_classes_for_all_modules.Beneficiary@31e76a8d</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.clickprojectmanagerbutton()'><b>clickprojectmanagerbutton</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-amx-c132=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (90, 251). Other element would receive the click: &lt;div _ngcontent-amx-c129=&quot;&quot; id=&quot;preloader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=136.0.7103.114)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acd3c54b968be96e60141b27c28fe037, clickElement {id=f.936DC088280B34BDFA932C71BF86ED64.d.215F7B7C73353A6686CC41FB3143BF68.e.78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51285/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (acd3c54b968be96e60141b27c28fe037)] -&gt; xpath: //*[text()=&apos; Project Manager&apos;]]
+Session ID: acd3c54b968be96e60141b27c28fe037
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at anfas.reusablekeyboardactions.clickElement(reusablekeyboardactions.java:30)
+	at anfas_main_classes_for_all_modules.project_manager.clickprojectmanagerbutton(project_manager.java:178)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1978983026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978983026'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span _ngcontent-amx-c132=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (90, 251). Other element would receive the click: &lt;div _ngcontent-amx-c129=&quot;&quot; id=&quot;preloader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=136.0.7103.114)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [acd3c54b968be96e60141b27c28fe037, clickElement {id=f.936DC088280B34BDFA932C71BF86ED64.d.215F7B7C73353A6686CC41FB3143BF68.e.78}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51285/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (acd3c54b968be96e60141b27c28fe037)] -&gt; xpath: //*[text()=&apos; Project Manager&apos;]]
+Session ID: acd3c54b968be96e60141b27c28fe037
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at anfas.reusablekeyboardactions.clickElement(reusablekeyboardactions.java:30)
+	at anfas_main_classes_for_all_modules.project_manager.clickprojectmanagerbutton(project_manager.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>1</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
+<tr>
+<td title='anfas_main_classes_for_all_modules.project_manager.addlastname()'><b>addlastname</b><br>Test class: anfas_main_classes_for_all_modules.project_manager</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51285/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acd3c54b968be96e60141b27c28fe037
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
+	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
+	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:316)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1725389275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725389275'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51285/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: acd3c54b968be96e60141b27c28fe037
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
+	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
+	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:316)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>75</td>
+<td>anfas_main_classes_for_all_modules.project_manager@1b8fa2fa</td></tr>
 </table><p>
 </body>
 </html>

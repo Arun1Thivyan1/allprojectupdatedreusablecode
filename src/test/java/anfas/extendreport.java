@@ -17,7 +17,15 @@ public class extendreport
 	    
 
 	    public static ExtentReports getExtentReports() {
-	        if (extent == null) {
+	        if (extent == null) 
+	        
+	        
+	        	synchronized (extendreport.class){
+	        
+	        
+	        
+	        
+	        {
 	        	
 	        	
 	        	  String timestamp = new SimpleDateFormat("dd-MM-yyyy_HH-mm-ss").format(new Date());
@@ -47,6 +55,9 @@ public class extendreport
 	            
 	        //    extent.setSystemInfo("Tester", "YourName");
 	        }
+	        
+	        
+	    }
 	        return extent;
 	    }
 	    

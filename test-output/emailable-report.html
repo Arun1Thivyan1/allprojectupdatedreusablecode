@@ -8,83 +8,13 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Test Suite</th></tr>
-<tr><td><a href="#t0">Beneficiary and Project Manager Test</a></td><td class="num">13</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">223,319</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">133,444</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Beneficiary and Project Manager Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">anfas_main_classes_for_all_modules.Beneficiary</td><td><a href="#m0">addemail</a></td><td rowspan="1">1748004743234</td><td rowspan="1">75206</td></tr><tr class="failedodd"><td rowspan="1">anfas_main_classes_for_all_modules.project_manager</td><td><a href="#m1">addlastname</a></td><td rowspan="1">1748004741725</td><td rowspan="1">75168</td></tr><tr><th colspan="4">Beneficiary and Project Manager Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">anfas_main_classes_for_all_modules.Beneficiary</td><td><a href="#m2">addemail</a></td><td rowspan="1">1748004662523</td><td rowspan="1">75190</td></tr><tr class="retriedodd"><td rowspan="1">anfas_main_classes_for_all_modules.project_manager</td><td><a href="#m3">addlastname</a></td><td rowspan="1">1748004661088</td><td rowspan="1">75144</td></tr><tr><th colspan="4">Beneficiary and Project Manager Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">anfas_main_classes_for_all_modules.Beneficiary</td><td><a href="#m4">addmobilenumber</a></td><td rowspan="1">1748004662360</td><td rowspan="1">161</td></tr><tr class="passedeven"><td><a href="#m5">addname</a></td><td rowspan="1">1748004662171</td><td rowspan="1">186</td></tr><tr class="passedeven"><td><a href="#m6">clickbeneficiarybutton</a></td><td rowspan="1">1748004640730</td><td rowspan="1">236</td></tr><tr class="passedeven"><td><a href="#m7">clicknewbeneficiarybutton</a></td><td rowspan="1">1748004640969</td><td rowspan="1">5126</td></tr><tr class="passedeven"><td><a href="#m8">clicksidemenubarandbeneficiarybutton</a></td><td rowspan="1">1748004625678</td><td rowspan="1">15047</td></tr><tr class="passedeven"><td><a href="#m9">login</a></td><td rowspan="1">1748004619960</td><td rowspan="1">5706</td></tr><tr class="passedeven"><td><a href="#m10">uploadimage</a></td><td rowspan="1">1748004646097</td><td rowspan="1">16072</td></tr><tr class="passedodd"><td rowspan="6">anfas_main_classes_for_all_modules.project_manager</td><td><a href="#m11">addfirstname</a></td><td rowspan="1">1748004660364</td><td rowspan="1">722</td></tr><tr class="passedodd"><td><a href="#m12">clicknewbeneficiarybutton</a></td><td rowspan="1">1748004641068</td><td rowspan="1">5149</td></tr><tr class="passedodd"><td><a href="#m13">clickprojectmanagerbutton</a></td><td rowspan="1">1748004640809</td><td rowspan="1">254</td></tr><tr class="passedodd"><td><a href="#m14">clicksidemenubarandbeneficiarybutton</a></td><td rowspan="1">1748004625732</td><td rowspan="1">15073</td></tr><tr class="passedodd"><td><a href="#m15">login</a></td><td rowspan="1">1748004620000</td><td rowspan="1">5731</td></tr><tr class="passedodd"><td><a href="#m16">uploadimage</a></td><td rowspan="1">1748004646221</td><td rowspan="1">14141</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">uianduxtesting.uianduxformultipleimages</td><td><a href="#m0">beneficvsbeneficiarypagecheck</a></td><td rowspan="1">1748258837986</td><td rowspan="1">29517</td></tr><tr class="passedeven"><td><a href="#m1">chvsbeneficiarypagecheck</a></td><td rowspan="1">1748258808049</td><td rowspan="1">29935</td></tr><tr class="passedeven"><td><a href="#m2">pmvsbeneficiarypagecheck</a></td><td rowspan="1">1748258745422</td><td rowspan="1">62622</td></tr></tbody>
 </table>
-<h2>Beneficiary and Project Manager Test</h2><h3 id="m0">anfas_main_classes_for_all_modules.Beneficiary#addemail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">anfas_main_classes_for_all_modules.project_manager#addlastname</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">anfas_main_classes_for_all_modules.Beneficiary#addemail</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Emaill&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">anfas_main_classes_for_all_modules.project_manager#addlastname</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Last Namee&apos;]//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-	at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-	at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">anfas_main_classes_for_all_modules.Beneficiary#addmobilenumber</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">anfas_main_classes_for_all_modules.Beneficiary#addname</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">anfas_main_classes_for_all_modules.Beneficiary#clickbeneficiarybutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">anfas_main_classes_for_all_modules.Beneficiary#clicknewbeneficiarybutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">anfas_main_classes_for_all_modules.Beneficiary#clicksidemenubarandbeneficiarybutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">anfas_main_classes_for_all_modules.Beneficiary#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">anfas_main_classes_for_all_modules.Beneficiary#uploadimage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">anfas_main_classes_for_all_modules.project_manager#addfirstname</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m12">anfas_main_classes_for_all_modules.project_manager#clicknewbeneficiarybutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m13">anfas_main_classes_for_all_modules.project_manager#clickprojectmanagerbutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m14">anfas_main_classes_for_all_modules.project_manager#clicksidemenubarandbeneficiarybutton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m15">anfas_main_classes_for_all_modules.project_manager#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m16">anfas_main_classes_for_all_modules.project_manager#uploadimage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">uianduxtesting.uianduxformultipleimages#beneficvsbeneficiarypagecheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">uianduxtesting.uianduxformultipleimages#chvsbeneficiarypagecheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">uianduxtesting.uianduxformultipleimages#pmvsbeneficiarypagecheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

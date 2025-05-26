@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="anfas_main_classes_for_all_modules.project_manager">
+      <class name="uianduxtesting.uianduxformultipleimages">
         <methods>
+          <include name="tearDownExtentReport"/>
+          <include name="setupExtentReport"/>
           <include name="launchbrowser"/>
+          <include name="pmvsbeneficiarypagecheck"/>
           <include name="teardown"/>
-          <include name="addlastname"/>
         </methods>
-      </class> <!-- anfas_main_classes_for_all_modules.project_manager -->
+      </class> <!-- uianduxtesting.uianduxformultipleimages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

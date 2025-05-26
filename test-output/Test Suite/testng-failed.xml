@@ -8,6 +8,9 @@
     <classes>
       <class name="anfas_main_classes_for_all_modules.project_manager">
         <methods>
+          <include name="tearDownExtentReport"/>
+          <include name="setupExtentReport"/>
+          <include name="clickprojectmanagerbutton"/>
           <include name="launchbrowser"/>
           <include name="teardown"/>
           <include name="addlastname"/>
@@ -15,8 +18,11 @@
       </class> <!-- anfas_main_classes_for_all_modules.project_manager -->
       <class name="anfas_main_classes_for_all_modules.Beneficiary">
         <methods>
+          <include name="setupExtentReport"/>
+          <include name="tearDownExtentReport"/>
           <include name="launchbrowser"/>
           <include name="addemail"/>
+          <include name="beneficiary_uploadimage"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- anfas_main_classes_for_all_modules.Beneficiary -->

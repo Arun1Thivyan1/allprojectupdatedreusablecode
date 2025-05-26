@@ -1,255 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="17" passed="13" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-23T18:20:10 IST" name="Test Suite" finished-at="2025-05-23T18:23:53 IST" duration-ms="223319">
+  <suite started-at="2025-05-26T16:55:34 IST" name="Default suite" finished-at="2025-05-26T16:57:47 IST" duration-ms="133444">
     <groups>
     </groups>
-    <test started-at="2025-05-23T18:20:10 IST" name="Beneficiary and Project Manager Test" finished-at="2025-05-23T18:23:53 IST" duration-ms="223319">
-      <class name="anfas_main_classes_for_all_modules.project_manager">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:20:10 IST" name="launchbrowser" finished-at="2025-05-23T18:20:19 IST" duration-ms="9910" status="PASS">
+    <test started-at="2025-05-26T16:55:34 IST" name="Default test" finished-at="2025-05-26T16:57:47 IST" duration-ms="133444">
+      <class name="uianduxtesting.uianduxformultipleimages">
+        <test-method is-config="true" signature="setupExtentReport()[pri:0, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:55:33 IST" name="setupExtentReport" finished-at="2025-05-26T16:55:34 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupExtentReport -->
+        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:55:34 IST" name="launchbrowser" finished-at="2025-05-26T16:55:45 IST" duration-ms="11175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchbrowser -->
-        <test-method signature="login()[pri:1, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:20:20 IST" name="login" finished-at="2025-05-23T18:20:25 IST" duration-ms="5731" status="PASS">
+        <test-method signature="pmvsbeneficiarypagecheck()[pri:1, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:55:45 IST" name="pmvsbeneficiarypagecheck" finished-at="2025-05-26T16:56:48 IST" duration-ms="62622" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clicksidemenubarandbeneficiarybutton()[pri:2, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:20:25 IST" name="clicksidemenubarandbeneficiarybutton" finished-at="2025-05-23T18:20:40 IST" duration-ms="15073" status="PASS">
+        </test-method> <!-- pmvsbeneficiarypagecheck -->
+        <test-method signature="chvsbeneficiarypagecheck()[pri:2, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:56:48 IST" name="chvsbeneficiarypagecheck" finished-at="2025-05-26T16:57:17 IST" duration-ms="29935" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clicksidemenubarandbeneficiarybutton -->
-        <test-method signature="clickprojectmanagerbutton()[pri:3, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:20:40 IST" name="clickprojectmanagerbutton" finished-at="2025-05-23T18:20:41 IST" duration-ms="254" status="PASS">
+        </test-method> <!-- chvsbeneficiarypagecheck -->
+        <test-method signature="beneficvsbeneficiarypagecheck()[pri:3, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:57:17 IST" name="beneficvsbeneficiarypagecheck" finished-at="2025-05-26T16:57:47 IST" duration-ms="29517" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickprojectmanagerbutton -->
-        <test-method signature="clicknewbeneficiarybutton()[pri:4, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:20:41 IST" name="clicknewbeneficiarybutton" finished-at="2025-05-23T18:20:46 IST" duration-ms="5149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clicknewbeneficiarybutton -->
-        <test-method signature="uploadimage()[pri:5, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:20:46 IST" name="uploadimage" finished-at="2025-05-23T18:21:00 IST" duration-ms="14141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadimage -->
-        <test-method signature="addfirstname()[pri:6, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:21:00 IST" name="addfirstname" finished-at="2025-05-23T18:21:01 IST" duration-ms="722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addfirstname -->
-        <test-method retried="true" signature="addlastname()[pri:7, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:21:01 IST" name="addlastname" finished-at="2025-05-23T18:22:16 IST" duration-ms="75144" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Last Namee']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Last Namee']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addlastname -->
-        <test-method signature="addlastname()[pri:7, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:22:21 IST" name="addlastname" finished-at="2025-05-23T18:23:36 IST" duration-ms="75168" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Last Namee']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Last Namee']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52557}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52557/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 14b3e747b6efa7b210bbefddd91b2f7c
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-at anfas_main_classes_for_all_modules.project_manager.addlastname(project_manager.java:298)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addlastname -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:anfas_main_classes_for_all_modules.project_manager@6ef037e4]" started-at="2025-05-23T18:23:42 IST" name="teardown" finished-at="2025-05-23T18:23:53 IST" duration-ms="10717" status="PASS">
+        </test-method> <!-- beneficvsbeneficiarypagecheck -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:57:47 IST" name="teardown" finished-at="2025-05-26T16:57:47 IST" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- anfas_main_classes_for_all_modules.project_manager -->
-      <class name="anfas_main_classes_for_all_modules.Beneficiary">
-        <test-method is-config="true" signature="launchbrowser()[pri:0, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:20:10 IST" name="launchbrowser" finished-at="2025-05-23T18:20:19 IST" duration-ms="9851" status="PASS">
+        <test-method is-config="true" signature="tearDownExtentReport()[pri:0, instance:uianduxtesting.uianduxformultipleimages@3cad68df]" started-at="2025-05-26T16:57:47 IST" name="tearDownExtentReport" finished-at="2025-05-26T16:57:59 IST" duration-ms="11430" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchbrowser -->
-        <test-method signature="login()[pri:1, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:20:19 IST" name="login" finished-at="2025-05-23T18:20:25 IST" duration-ms="5706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clicksidemenubarandbeneficiarybutton()[pri:2, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:20:25 IST" name="clicksidemenubarandbeneficiarybutton" finished-at="2025-05-23T18:20:40 IST" duration-ms="15047" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clicksidemenubarandbeneficiarybutton -->
-        <test-method signature="clickbeneficiarybutton()[pri:3, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:20:40 IST" name="clickbeneficiarybutton" finished-at="2025-05-23T18:20:40 IST" duration-ms="236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickbeneficiarybutton -->
-        <test-method signature="clicknewbeneficiarybutton()[pri:4, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:20:40 IST" name="clicknewbeneficiarybutton" finished-at="2025-05-23T18:20:46 IST" duration-ms="5126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clicknewbeneficiarybutton -->
-        <test-method signature="uploadimage()[pri:5, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:20:46 IST" name="uploadimage" finished-at="2025-05-23T18:21:02 IST" duration-ms="16072" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadimage -->
-        <test-method signature="addname()[pri:6, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:21:02 IST" name="addname" finished-at="2025-05-23T18:21:02 IST" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addname -->
-        <test-method signature="addmobilenumber()[pri:7, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:21:02 IST" name="addmobilenumber" finished-at="2025-05-23T18:21:02 IST" duration-ms="161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addmobilenumber -->
-        <test-method retried="true" signature="addemail()[pri:8, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:21:02 IST" name="addemail" finished-at="2025-05-23T18:22:17 IST" duration-ms="75190" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Emaill']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Emaill']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addemail -->
-        <test-method signature="addemail()[pri:8, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:22:23 IST" name="addemail" finished-at="2025-05-23T18:23:38 IST" duration-ms="75206" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Emaill']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()='Emaill']//following-sibling::input (tried for 75 second(s) with 500 milliseconds interval)
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '17.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.92 (cb81a4cc5087..., userDataDir: /var/folders/6r/9r64p18s683...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52556}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52556/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: fbda72f3b54f2f7cc37893ccfce7017b
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-at anfas.wait_helper.getVisibleElement(wait_helper.java:14)
-at anfas.reusablekeyboardactions.enterText(reusablekeyboardactions.java:62)
-at anfas_main_classes_for_all_modules.Beneficiary.addemail(Beneficiary.java:346)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addemail -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:anfas_main_classes_for_all_modules.Beneficiary@1921994e]" started-at="2025-05-23T18:23:43 IST" name="teardown" finished-at="2025-05-23T18:23:53 IST" duration-ms="9470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- anfas_main_classes_for_all_modules.Beneficiary -->
-    </test> <!-- Beneficiary and Project Manager Test -->
-  </suite> <!-- Test Suite -->
+        </test-method> <!-- tearDownExtentReport -->
+      </class> <!-- uianduxtesting.uianduxformultipleimages -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

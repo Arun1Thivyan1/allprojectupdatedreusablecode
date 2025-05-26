@@ -55,11 +55,7 @@ public class uianduxformultipleimages extends base_class
 			
 
 			
-			
-			
-			
-			
-			//JavascriptExecutor js = (JavascriptExecutor) driver;
+
 			
 			
 			
@@ -114,17 +110,13 @@ public class uianduxformultipleimages extends base_class
 						
 						WebElement three = wait_helper.getVisibleElement(By.xpath((subclassforxpath.sidemenu_button)));
 						
-						
-						//
-					//	js.executeScript("arguments[0].click();", three);
 					
-						//
 						
 						getJs().executeScript("arguments[0].click();", three );
 						
 						
 						
-						
+						Thread.sleep(8000);
 						
 						reusablekeyboardactions.clickElement(driver.get(),By.xpath(subclassforxpath.clickpmbutton));
 						
@@ -150,9 +142,7 @@ public class uianduxformultipleimages extends base_class
 					  // Take screenshot of project manager Page
 						
 						
-					  //Screenshot projectmanager = new AShot().takeScreenshot(driver);
-						
-					//
+					
 					    
 					    Screenshot projectmanager = new AShot().takeScreenshot(driver.get());
 					   
@@ -186,17 +176,15 @@ public class uianduxformultipleimages extends base_class
 					    
 					    if (diffImagePath != null) {
 					        String base64Image = screenshotutil.convertImageToBase64(diffImagePath);
-					        //
-					     //   test.fail("Visual difference detected. See screenshot below.",
-					        //
+					
 					        		
-					        getTest().fail("Visual difference detected. See screenshot below.", 		
+					        getExtentTest().fail("Visual difference detected. See screenshot below.", 		
 					        		
 					            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
 					    }
 					    else
 					    {
-					    	 getTest().pass("Visual match confirmed. No difference detected.");
+					    	 getExtentTest().pass("Visual match confirmed. No difference detected.");
 					    }
 					
 			        
@@ -217,6 +205,9 @@ public class uianduxformultipleimages extends base_class
 					
 					
 					 startTest("chvsbeneficiarypagecheck");
+					 
+					 
+					 Thread.sleep(8000);
 					
 					reusablekeyboardactions.clickElement(driver.get(),By.xpath(subclassforxpath.clickchbutton));	
 					
@@ -225,15 +216,7 @@ public class uianduxformultipleimages extends base_class
 					Thread.sleep(20000);
 					
 					
-					  // Take screenshot of committehead Page
 					
-					//
-				  //  Screenshot committehead = new AShot().takeScreenshot(driver);
-				    //
-				    
-				    
-				    
-				    //
 				    
 				    Screenshot committehead = new AShot().takeScreenshot(driver.get());
 				    
@@ -264,13 +247,85 @@ public class uianduxformultipleimages extends base_class
 				    {
 				    	
 				        String base64Image = screenshotutil.convertImageToBase64(diffImagePath1);
-				        getTest().fail("Visual difference detected. See screenshot below.",
+				        getExtentTest().fail("Visual difference detected. See screenshot below.",
 				            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
 				        
 				        
 				        System.out.println("mic check");
 				    } else {
-				    	 getTest().pass("Visual match confirmed. No difference detected.");
+				    	 getExtentTest().pass("Visual match confirmed. No difference detected.");
+				    }
+				
+					
+					
+				
+				}
+				
+				
+				
+				
+				
+				
+				@Test(priority=3)
+				
+				
+
+				public void beneficvsbeneficiarypagecheck() throws InterruptedException, AWTException, IOException 
+				{
+				
+					
+					
+					
+					 startTest("benfivsbeneficiarypagecheck");
+					 
+					 
+					 Thread.sleep(8000);
+					
+					reusablekeyboardactions.clickElement(driver.get(),By.xpath(subclassforxpath.clickbeneficiarybutton));	
+					
+					
+					
+					Thread.sleep(20000);
+					
+					
+					
+				    
+				    Screenshot beneficiary = new AShot().takeScreenshot(driver.get());
+				    
+				    //
+				    String beneficiaryActualPath = "/Users/apple/eclipse-workspace/all_pro_maj_flow_automation/screenshot_images/ben_actual.png";
+				    ImageIO.write(beneficiary.getImage(), "PNG", new File(beneficiaryActualPath));
+					
+					
+				    
+				    
+				    
+				    
+				   // Compare with expected beneficary Page
+				 
+				    compare_images comparer = new compare_images();
+//				    
+//	
+				    BufferedImage expectedImage2 = ImageIO.read(new File("/Users/apple/eclipse-workspace/all_pro_maj_flow_automation/expected_image_folder/beneficiary_page.png"));
+//				    
+//				    
+//				    
+//				    
+//					  // Get diff image path if any
+				    String diffImagePath2 = 
+				    comparer.compareImages(expectedImage2, beneficiary.getImage(), "beneficiaryvsbeneficiarypagecheck");
+//				    
+				    if (diffImagePath2 != null)
+				    {
+//				    	
+				        String base64Image = screenshotutil.convertImageToBase64(diffImagePath2);
+				        getExtentTest().fail("Visual difference detected. See screenshot below.",
+				            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Image).build());
+//				        
+//				        
+				        System.out.println("mic check");
+				    } else {
+				    	 getExtentTest().pass("Visual match confirmed. No difference detected.");
 				    }
 				
 					

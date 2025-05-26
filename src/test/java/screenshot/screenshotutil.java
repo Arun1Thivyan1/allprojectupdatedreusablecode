@@ -68,7 +68,7 @@ public class screenshotutil
             JavascriptExecutor js = (JavascriptExecutor) driver;
             js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
             
-            Thread.sleep(5000);
+            Thread.sleep(8000);
             // Optional: Hide fixed headers/footers to avoid border issues
             
             js.executeScript("document.querySelectorAll('header, footer, .fixed-element').forEach(e => e.style.display = 'none');");

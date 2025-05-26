@@ -66,7 +66,7 @@ public class Beneficiary extends base_class
 
 {
 	
-//	ExtentTest test;
+
 	
 	
 	
@@ -85,7 +85,7 @@ public class Beneficiary extends base_class
 	
 	
 	
-	//JavascriptExecutor js = (JavascriptExecutor) driver;
+
 	
 	
 	
@@ -109,16 +109,7 @@ public class Beneficiary extends base_class
 			
 			
 	
-		//	 test = extendreport.createTest("Login Test");
 
-			 
-			 
-		
-			 
-			 
-			// 
-		//	reusablekeyboardactions.enterText(By.xpath(subclassforxpath.email_path), "survey@gmail.com");
-			//
 			
 			
 			reusablekeyboardactions.enterText(driver.get(), By.xpath(subclassforxpath.email_path), "survey@gmail.com");
@@ -155,26 +146,15 @@ public class Beneficiary extends base_class
 
 		public void clicksidemenubarandbeneficiarybutton() throws InterruptedException, AWTException, IOException {
 			
-			Thread.sleep(15000);
+			Thread.sleep(20000);
 			
 			
 			
 			startTest("sidemenubutton");
-//			
-//	
-//			
-//			///////////////////////////////////////////////////////////
-//		
-//
-//			
-//			
+		
 			WebElement three = wait_helper.getVisibleElement(By.xpath((subclassforxpath.sidemenu_button)));
 			
-	//		
-			
-	//		js.executeScript("arguments[0].click();", three);
-			
-	//		
+		
 			getJs().executeScript("arguments[0].click();", three );
 			
 			
@@ -249,7 +229,7 @@ public class Beneficiary extends base_class
 		     Thread.sleep(5000);
 		     
 		     startTest("click new beneficiary button");
-		 //     test = extendreport.createTest("clicknewbeneficiary");
+		
 		     
 		     reusablekeyboardactions.clickElement(driver.get(),By.xpath(subclassforxpath.clicknewbeneficiarybutton));
 		     
@@ -270,13 +250,13 @@ public class Beneficiary extends base_class
 			
 			
 
-			public void uploadimage() throws InterruptedException, AWTException, IOException {  
+			public void beneficiary_uploadimage() throws InterruptedException, AWTException, IOException {  
 		 		
 		 		
-		 		startTest("upload image");
+		 		startTest("beneficiary upload image");
 		     
 		     
-			 //  test = extendreport.createTest("uploadimage");
+			
 
 		     reusablekeyboardactions.clickElement(driver.get(),By.xpath(subclassforxpath.uploadimage));
 		     
@@ -293,6 +273,26 @@ public class Beneficiary extends base_class
 		     fileuploadusingapplescript.uploadFile(filePath);
 		
 		 	}
+		 	
+
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
+		 	
 		 	
 		 	
 		 	@Test(priority=6,retryAnalyzer = RetryAnalyzer.class)
