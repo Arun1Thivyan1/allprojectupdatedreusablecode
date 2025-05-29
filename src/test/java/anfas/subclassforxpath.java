@@ -37,6 +37,13 @@ public class subclassforxpath
 	
 	
 	
+
+	
+	
+	public static final String clickusermangtbutton ="//*[text()=' User Management']"; 
+	
+	
+	
 	
 	public static final String clickpmbutton ="//*[text()=' Project Manager']";
 	
