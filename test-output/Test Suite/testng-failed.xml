@@ -4,28 +4,17 @@
   <listeners>
     <listener class-name="unified_test_listener.listenerforboth_extendreport_failurescreenshot"/>
   </listeners>
-  <test thread-count="2" parallel="classes" name="Beneficiary and Project Manager Test(failed)">
+  <test thread-count="2" parallel="classes" name="Beneficiary and UI/UX for Multiple Images Test(failed)">
     <classes>
-      <class name="anfas_main_classes_for_all_modules.project_manager">
-        <methods>
-          <include name="tearDownExtentReport"/>
-          <include name="setupExtentReport"/>
-          <include name="clickprojectmanagerbutton"/>
-          <include name="launchbrowser"/>
-          <include name="teardown"/>
-          <include name="addlastname"/>
-        </methods>
-      </class> <!-- anfas_main_classes_for_all_modules.project_manager -->
       <class name="anfas_main_classes_for_all_modules.Beneficiary">
         <methods>
-          <include name="setupExtentReport"/>
           <include name="tearDownExtentReport"/>
+          <include name="setupExtentReport"/>
           <include name="launchbrowser"/>
           <include name="addemail"/>
-          <include name="beneficiary_uploadimage"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- anfas_main_classes_for_all_modules.Beneficiary -->
     </classes>
-  </test> <!-- Beneficiary and Project Manager Test(failed) -->
+  </test> <!-- Beneficiary and UI/UX for Multiple Images Test(failed) -->
 </suite> <!-- Failed suite [Test Suite] -->

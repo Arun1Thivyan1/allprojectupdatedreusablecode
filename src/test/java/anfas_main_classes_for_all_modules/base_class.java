@@ -27,6 +27,7 @@ import anfas.send_email_to_the_team_for_extend_report;
 import anfas.subclassforxpath;
 import anfas.wait_helper;
 import care_sa_admin_portal.home_page;
+import file_upload_directly_to_attachments.ZohoUploader;
 import uianduxtesting.clean_the_images_in_the_folder;
 
 
@@ -95,6 +96,16 @@ public class base_class
                 logger.info("Extent report flushed.");
                 send_email_to_the_team_for_extend_report.sendEmailWithReport();
                 logger.info("Report sent to the team.");
+                
+                
+                // Call ZohoUploader to upload the Extent report file to Zoho
+                ZohoUploader.uploadExtentReport();
+                logger.info("Extent report uploaded to Zoho.");
+                
+                
+                
+                
+                
             }
         } catch (Exception e) {
             logger.error("Failed to send the email report: " + e.getMessage());

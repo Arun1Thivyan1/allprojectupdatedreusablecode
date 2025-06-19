@@ -8,7 +8,7 @@
           <include name="tearDownExtentReport"/>
           <include name="setupExtentReport"/>
           <include name="launchbrowser"/>
-          <include name="pmvsbeneficiarypagecheck"/>
+          <include name="benvsbeneficiarypagecheck"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- uianduxtesting.uianduxformultipleimages -->

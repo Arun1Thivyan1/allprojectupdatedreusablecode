@@ -1,5 +1,6 @@
-2025-05-26 16:55:34 [main] INFO  care_sa_admin_portal.home_page - ExtentReport initialized once for the suite.
-2025-05-26 16:55:45 [main] INFO  care_sa_admin_portal.home_page - Browser launched and navigated successfully.
-2025-05-26 16:57:47 [main] INFO  care_sa_admin_portal.home_page - Browser closed.
-2025-05-26 16:57:47 [main] INFO  care_sa_admin_portal.home_page - Extent report flushed.
-2025-05-26 16:57:59 [main] INFO  care_sa_admin_portal.home_page - Report sent to the team.
+2025-06-01 00:33:48 [main] INFO  care_sa_admin_portal.home_page - ExtentReport initialized once for the suite.
+2025-06-01 00:34:28 [main] INFO  care_sa_admin_portal.home_page - Browser launched and navigated successfully.
+2025-06-01 00:35:30 [main] INFO  care_sa_admin_portal.home_page - Browser closed.
+2025-06-01 00:35:30 [main] INFO  care_sa_admin_portal.home_page - Extent report flushed.
+2025-06-01 00:35:54 [main] INFO  care_sa_admin_portal.home_page - Report sent to the team.
+2025-06-01 00:35:54 [main] INFO  care_sa_admin_portal.home_page - Extent report uploaded to Zoho.

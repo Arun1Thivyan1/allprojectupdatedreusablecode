@@ -10,20 +10,18 @@
     <listeners>
         <listener class-name="unified_test_listener.listenerforboth_extendreport_failurescreenshot"/>
     </listeners>
- <test name="Beneficiary and UI/UX for Multiple Images Test" preserve-order="true">
- <classes>
+
+    <test name="Beneficiary and UI/UX for Multiple Images Test">
+        <classes>
 
 
 
 
-
-
-
-
-<class name="anfas_main_classes_for_all_modules.Beneficiary"/>
+            <class name="anfas_main_classes_for_all_modules.Beneficiary"/>
 
 
 <class name="uianduxtesting.uianduxformultipleimages"/>
+
 
 
             
